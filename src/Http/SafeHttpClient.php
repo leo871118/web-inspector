@@ -159,7 +159,7 @@ final readonly class SafeHttpClient
         $effectiveUrl = (string) (curl_getinfo($ch, CURLINFO_EFFECTIVE_URL) ?: $url);
         $redirectCount = (int) curl_getinfo($ch, CURLINFO_REDIRECT_COUNT);
         $rawHttpVersion = (int) curl_getinfo($ch, CURLINFO_HTTP_VERSION);
-        curl_close($ch);
+        unset($ch);
 
         if ($responseBody === false && $curlError !== '') {
             throw new InspectorException(sprintf('HTTP request to "%s" failed: %s', $url, $curlError));
