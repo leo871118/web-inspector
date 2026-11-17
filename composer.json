@@ -1,0 +1,51 @@
+{
+    "name": "leandroperez/web-inspector",
+    "description": "Framework-agnostic PHP 8.3+ library for technical website auditing, security headers, SSL, DNS, stack fingerprinting, and WordPress diagnostics.",
+    "type": "library",
+    "license": "MIT",
+    "keywords": [
+        "php",
+        "security-headers",
+        "ssl-checker",
+        "dns-lookup",
+        "wordpress-scanner",
+        "stack-detector",
+        "site-audit"
+    ],
+    "authors": [
+        {
+            "name": "Leandro Perez"
+        }
+    ],
+    "require": {
+        "php": "^8.3",
+        "ext-curl": "*",
+        "ext-dom": "*",
+        "ext-json": "*",
+        "ext-mbstring": "*",
+        "ext-openssl": "*"
+    },
+    "require-dev": {
+        "friendsofphp/php-cs-fixer": "^3.64",
+        "phpstan/phpstan": "^2.0",
+        "phpunit/phpunit": "^11.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "LeandroPerez\\WebInspector\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "LeandroPerez\\WebInspector\\Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "test": "phpunit",
+        "stan": "phpstan analyse src tests --level=8",
+        "cs-check": "php-cs-fixer fix --dry-run --diff",
+        "cs-fix": "php-cs-fixer fix"
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}
