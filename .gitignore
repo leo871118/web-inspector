@@ -5,3 +5,5 @@
 .vscode/
 .env
 .env.local
+# PHP CS Fixer configuration
+/.php-cs-fixer.php

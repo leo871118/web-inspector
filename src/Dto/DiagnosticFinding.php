@@ -17,8 +17,7 @@ final readonly class DiagnosticFinding implements JsonSerializable
         public string $title,
         public string $detail,
         public ?string $recommendation = null,
-    ) {
-    }
+    ) {}
 
     /**
      * @return array<string, mixed>

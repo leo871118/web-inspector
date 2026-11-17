@@ -16,8 +16,7 @@ final readonly class SafeHttpClient
     public function __construct(
         private InspectorConfig $config = new InspectorConfig(),
         private UrlNormalizer $urlNormalizer = new UrlNormalizer(),
-    ) {
-    }
+    ) {}
 
     /**
      * Executes an HTTP GET request.

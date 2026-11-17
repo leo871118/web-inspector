@@ -9,6 +9,4 @@ use RuntimeException;
 /**
  * Base exception thrown by the WebInspector library.
  */
-class InspectorException extends RuntimeException
-{
-}
+class InspectorException extends RuntimeException {}

@@ -25,8 +25,7 @@ final readonly class HttpResponse implements JsonSerializable
         public int $redirectCount,
         public int $durationMs,
         public ?string $protocolVersion = null,
-    ) {
-    }
+    ) {}
 
     public function getHeader(string $name): ?string
     {

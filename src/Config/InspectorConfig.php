@@ -17,6 +17,5 @@ final readonly class InspectorConfig
         public string $userAgent = 'Mozilla/5.0 (compatible; WebInspectorPHP/1.0; +https://github.com/leandroperez/web-inspector)',
         public bool $blockPrivateNetworks = true,
         public ?string $httpProxy = null,
-    ) {
-    }
+    ) {}
 }
